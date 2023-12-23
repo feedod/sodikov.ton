@@ -1,11 +1,10 @@
-import { render } from 'https://esm.sh/preact';
-import htm from 'https://esm.sh/htm';
-import { init, MiniApp, ClosingBehavior, postEvent } from 'https://cdn.jsdelivr.net/npm/@tma.js/sdk@1.2.1/dist/index.mjs';
+import m from 'https://esm.sh/mithril@2.2.2';
+import { MiniApp, ClosingBehavior, postEvent } from 'https://cdn.jsdelivr.net/npm/@tma.js/sdk@1.2.1/dist/index.mjs';
 
-const { MiniApp, closingBehaviour, mainButton, viewport } = init();
+var root = document.body
 
-viewport.expand();
-
-MiniApp.setHeaderColor('#ffffff');
-
-closingBehaviour.enableConfirmation();
+m.mount(root, {
+    view: function() {
+        return m("h1", "Try me out")
+    }
+})
