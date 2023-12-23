@@ -1,10 +1,12 @@
-import m from 'https://esm.sh/mithril@2.2.2';
-import { MiniApp, ClosingBehavior, postEvent } from 'https://cdn.jsdelivr.net/npm/@tma.js/sdk@1.2.1/dist/index.mjs';
+import { render } from "//esm.sh/preact@10.19.3";
+import htm from "//esm.sh/htm@3.1.1";
+import {
+  MiniApp,
+  ClosingBehavior,
+  postEvent
+} from "//cdn.jsdelivr.net/npm/@tma.js/sdk@1.2.1/dist/index.mjs";
 
-var root = document.body
+var root = document.body;
 
-m.mount(root, {
-    view: function() {
-        return m("h1", "Try me out")
-    }
-})
+const app = h('h1', null, 'Привет, мир!');
+render(app, root);
