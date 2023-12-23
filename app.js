@@ -1,4 +1,4 @@
-import { init } from '//cdn.jsdelivr.net/npm/@tma.js/sdk@1.2.1/dist/index.mjs';
+import { init } from 'https://cdn.jsdelivr.net/npm/@tma.js/sdk@1.2.1/dist/index.mjs';
 
 const { mainButton, viewport } = init();
 
