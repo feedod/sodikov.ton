@@ -10,5 +10,3 @@ mainButton
   .setText('Expand')
   .enable()
   .show();
-  
-document.body.addText="hello";
