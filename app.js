@@ -1,12 +1,12 @@
-import { init } from 'https://cdn.jsdelivr.net/npm/@tma.js/sdk@1.2.1/dist/index.mjs';
+import { init } from 'https://cdn.jsdelivr.net/npm/@tma.js/sdk';
 
 const { mainButton, viewport } = init();
 
 mainButton.on('click', () => viewport.expand());
 
 mainButton
-  .setBackgroundColor('#ff0000')
-  .setTextColor('#ffffff')
+  .setBackgroundColor('#ffffff')
+  .setTextColor('#000000')
   .setText('Expand')
   .enable()
   .show();
