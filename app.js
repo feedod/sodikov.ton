@@ -1,4 +1,4 @@
-import { init } from 'https://cdn.jsdelivr.net/npm/@tma.js/sdk';
+import { init } from '//cdn.jsdelivr.net/npm/@tma.js/sdk';
 
 const { mainButton, viewport } = init();
 
