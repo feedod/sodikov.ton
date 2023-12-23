@@ -6,6 +6,6 @@ const { MiniApp, closingBehaviour, mainButton, viewport } = init();
 
 viewport.expand();
 
-miniApp.setHeaderColor('bg_color');
+miniApp.setHeaderColor('#ffffff');
 
 closingBehaviour.enableConfirmation();
