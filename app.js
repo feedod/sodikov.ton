@@ -1,5 +1,5 @@
-import { render } from "//esm.sh/preact@10.19.3";
-import htm from "//esm.sh/htm@3.1.1";
+import { render } from "//esm.sh/preact";
+import htm from "//esm.sh/htm";
 import {
   MiniApp,
   ClosingBehavior,
