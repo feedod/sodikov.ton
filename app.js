@@ -2,8 +2,7 @@ import { h, render } from "//esm.sh/preact";
 import { init } from "//cdn.jsdelivr.net/npm/@tma.js/sdk@1.2.1/dist/index.mjs";
 
 const { mainButton, viewport } = init();
-
-mainButton.on("click", () => viewport.expand());
+viewport.expand();
 
 mainButton
   .setBackgroundColor("#000000")
