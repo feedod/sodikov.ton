@@ -7,7 +7,7 @@ viewport.expand();
 mainButton
   .setBackgroundColor("#000000")
   .setTextColor("#ffffff")
-  .setText("Expand")
+  .setText("Publish")
   .enable()
   .show();
 
