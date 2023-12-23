@@ -5,11 +5,8 @@ import { init, MiniApp, ClosingBehavior, postEvent } from 'https://cdn.jsdelivr.
 const { mainButton, viewport } = init();
 viewport.expand();
 
-const miniApp = new MiniApp({
-  headerColor: 'bg_color',
-  backgroundColor: 'bg_color',
-  postEvent,
-});
+const miniApp = new MiniApp();
+miniApp.setHeaderColor('bg_color');
 
 const closingBehaviour = new ClosingBehavior(false, postEvent);
 closingBehaviour.enableConfirmation();
