@@ -1,6 +1,12 @@
-import { h, render } from 'https://esm.sh/preact';
+import { init } from 'https://cdn.jsdelivr.net/npm/@tma.js/sdk';
 
-  // Создаём свое приложение
-  const app = h('h1', null, 'Привет, мир!');
+const { mainButton, viewport } = init();
 
-  render(app, document.body);
+mainButton.on('click', () => viewport.expand());
+
+mainButton
+  .setBackgroundColor('#ff0000')
+  .setTextColor('#ffffff')
+  .setText('Expand')
+  .enable()
+  .show();
