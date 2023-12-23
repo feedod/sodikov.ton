@@ -6,8 +6,10 @@ import {
   postEvent
 } from "//cdn.jsdelivr.net/npm/@tma.js/sdk@1.2.1/dist/index.mjs";
 
-const viewport = new Viewport();
-viewport.isExpanded = true;
+const viewport = new Viewport({
+  isExpanded: true,
+  postEvent
+});
 
 const app = h("h1", null, "Привет, мир!");
 render(app, document.body);
