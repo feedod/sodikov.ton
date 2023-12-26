@@ -1,5 +1,8 @@
 import { h, render } from 'https://esm.sh/preact';
 
+const app = h('h1', null, 'Привет, мир!');
+render(app, document.body);
+
 setLang(getUserLang());
 setCharset("utf-8");
 setViewport("width=device-width, initial-scale=1.0");
