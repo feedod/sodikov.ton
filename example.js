@@ -1,4 +1,7 @@
-import { h, render } from "//esm.sh/preact";
+import {$, jQuery} from "https://esm.sh/jquery@3.7.1";
+
+window.$ = $;
+window.jQuery = jQuery;
 
 // html lang
 setLang(getUserLang());
