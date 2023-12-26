@@ -1,5 +1,9 @@
 import { h, render } from "//esm.sh/preact";
 
+var usrlang = navigator.language || navigator.userLanguage;
+
+document.documentElement.setAttribute('lang', usrlang);
+
 var charset = document.createElement("meta");
 charset.setAttribute("charset", "utf-8");
 document.getElementsByTagName("head")[0].appendChild(charset);
