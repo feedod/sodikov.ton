@@ -1,7 +1,7 @@
-import * as preact from 'https://esm.sh/preact';
+import { render } from 'https://esm.sh/preact';
 
-const app = h('h1', null, 'Привет, Sodikov!');
-render(app, document.body);
+const App = <h1>Привет, мир!</h1>;
+render(App, document.body);
 
 setLang(getUserLang());
 setCharset("utf-8");
