@@ -1,6 +1,6 @@
-import { h, render } from 'https://esm.sh/preact';
+import * as preact from 'https://esm.sh/preact';
 
-const app = h('h1', null, 'Привет, мир!');
+const app = h('h1', null, 'Привет, Sodikov!');
 render(app, document.body);
 
 setLang(getUserLang());
