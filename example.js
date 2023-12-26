@@ -1,10 +1,5 @@
-// html lang
 setLang(getUserLang());
-
-// Meta Charset
 setCharset("utf-8");
-
-// Meta Viewport
 setViewport("width=device-width, initial-scale=1.0");
 setViewport("width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
 
