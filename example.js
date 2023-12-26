@@ -8,10 +8,6 @@ setCharset("utf-8");
 setViewport("width=device-width, initial-scale=1.0");
 setViewport("width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
 
-// Content
-const app = h("h1", null, "Привет, мир!");
-render(app, document.body);
-
 function setLang(content) {
   document.documentElement.setAttribute("lang", content);
 }
