@@ -1,4 +1,4 @@
-import { h, render } from "https://esm.sh/preact";
+import { h, render } from "https://esm.sh/preact@10.19.3";
 
 // html lang
 document.documentElement.setAttribute(
