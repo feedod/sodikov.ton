@@ -10,7 +10,7 @@ import { h, render } from 'https://esm.sh/preact';
   </Router>
 ); **/
 
-import {h, Component} from 'https://esm.sh/preact';
+import {Component} from 'https://esm.sh/preact';
 import TopAppBar from 'https://esm.sh/preact-material-components/TopAppBar';
 import 'https://esm.sh/preact-material-components/TopAppBar/style.css';
 
