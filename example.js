@@ -1,7 +1,7 @@
-import { render } from 'https://jspm.dev/pug@3.0.2';
+import { render } from "https://jspm.dev/pug@3.0.2";
 
-document.body.innerHTML = render(`
-ul
-  - for (let i = 0; i < 100; i++)
-    li #{i}
-`);
+const head = render(``);
+const body = render(`h1 hello`);
+
+document.head.innerHTML = head;
+document.body.innerHTML = body;
