@@ -2,7 +2,6 @@ import { h, render } from "https://esm.sh/preact@10.19.3";
 import i18next from 'https://esm.sh/i18next@23.7.12';
 
 i18next.init({
-  lng: 'ru',
   resources: {
     en: {
       translation: {
