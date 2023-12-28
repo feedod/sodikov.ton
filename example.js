@@ -1,21 +1,4 @@
 import { h, render } from "https://esm.sh/preact@10.19.3";
-import i18next from 'https://esm.sh/i18next@23.7.12';
-
-i18next.init({
-  lng: navigator.language || navigator.userLanguage,
-  resources: {
-    en: {
-      translation: {
-        "hi": "Hello world!"
-      }
-    },
-    ru: {
-      translation: {
-        "hi": "Привет, мир!"
-      }
-    }
-  }
-});
 
 // html lang
 document.documentElement.setAttribute(
@@ -38,13 +21,5 @@ viewport.setAttribute(
 document.getElementsByTagName("head")[0].appendChild(viewport);
 
 // content
-const app = h("h1", null, i18next.t("hi"));
+const app = h("h1", null, "Sodikov");
 render(app, document.body);
-
-function loadScript(src, onLoadCallback, onErrorCallback) {
-  const script = document.createElement("script");
-  script.src = src;
-  script.onload = onLoadCallback;
-  script.onerror = onErrorCallback;
-  document.body.appendChild(script);
-}
