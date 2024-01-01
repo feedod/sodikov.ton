@@ -39,7 +39,7 @@ fetch("https://esm.sh/gh/feedod/sodikov.ton/example.md")
     document.body.appendChild(article);
     // title
     document.title =
-      document.title || document.getElementById('top').value;
+      document.title || "sodikov.ton";
   })
   .catch((e) => console.error(e));
 
