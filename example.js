@@ -25,7 +25,7 @@ addStyle(
 // themecolor Meta
 var themeColorMeta = document.createElement("meta");
 themeColorMeta.setAttribute("name", "theme-color");
-themeColorMeta.setAttribute("content", "#0d1117");
+themeColorMeta.setAttribute("content", "#ffffff");
 document.head.appendChild(themeColorMeta);
 
 // content
