@@ -11,20 +11,11 @@ document.getElementsByTagName("head")[0].appendChild(charset);
 // meta viewport
 var viewport = document.createElement("meta");
 viewport.setAttribute("name", "viewport");
-viewport.setAttribute(
-  "content",
-  "width=device-width, initial-scale=1.0"
-);
+viewport.setAttribute("content", "width=device-width, initial-scale=1.0");
 document.getElementsByTagName("head")[0].appendChild(viewport);
 
 // content
-const html = "# Sodikov";
 fetch("index.md")
   .then((res) => res.text())
-  .then((md) => {
-      html = md;
-   })
-  .catch((e) => {
-    html = "# Error";
-  });
-document.body.innerHTML = marked.parse(html);;
+  .then((md) => document.body.innerHTML = marked.parse(md))
+  .catch((e) => console.error(e));
