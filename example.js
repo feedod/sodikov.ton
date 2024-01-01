@@ -15,8 +15,12 @@ viewportMeta.setAttribute("content", "width=device-width, initial-scale=1.0");
 document.head.appendChild(viewportMeta);
 
 // github-markdown-css
-loadStyle("https://esm.sh/gh/sindresorhus/github-markdown-css/github-markdown-dark.css");
-addStyle("body { background-color: #0d1117; } .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0 auto; padding: 45px; } @media (max-width: 767px) { .markdown-body { padding: 15px; } }");
+loadStyle(
+  "https://esm.sh/gh/sindresorhus/github-markdown-css/github-markdown-dark.css"
+);
+addStyle(
+  "body { background-color: #0d1117; } .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0 auto; padding: 45px; } @media (max-width: 767px) { .markdown-body { padding: 15px; } }"
+);
 
 // themecolor Meta
 var themeColorMeta = document.createElement("meta");
@@ -34,8 +38,10 @@ fetch("https://esm.sh/gh/feedod/sodikov.ton/example.md")
     article.innerHTML = marked.parse(md);
     document.body.appendChild(article);
     // title
-    document.title = document.title || document.body.firstElementChild.innerText.trim();
-  }).catch((e) => console.error(e));
+    document.title =
+      document.title || document.body.firstElementChild.innerText.trim();
+  })
+  .catch((e) => console.error(e));
 
 function loadStyle(url) {
   var style = document.createElement("link");
