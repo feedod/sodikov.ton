@@ -18,5 +18,13 @@ viewport.setAttribute(
 document.getElementsByTagName("head")[0].appendChild(viewport);
 
 // content
-const html = marked.parse('# Marked in Node.js\n\nRendered by **marked**.');
-document.body.innerHTML = html;
+const html = "# Sodikov";
+fetch("index.md")
+  .then((res) => res.text())
+  .then((md) => {
+      html = md;
+   })
+  .catch((e) => {
+    html = "# Error";
+  });
+document.body.innerHTML = marked.parse(html);;
