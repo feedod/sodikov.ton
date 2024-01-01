@@ -27,7 +27,6 @@ fetch("https://esm.sh/gh/feedod/sodikov.ton/example.md")
     article.classList.add("markdown-body");
     article.innerHTML = marked.parse(md);
     document.body.appendChild(article);
-    
     // title
     document.title = document.title || document.body.firstElementChild.innerText.trim();
   }).catch((e) => console.error(e));
