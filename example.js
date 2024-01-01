@@ -22,14 +22,15 @@ addStyle("body { background-color: #0d1117; } .markdown-body { box-sizing: borde
 fetch("https://esm.sh/gh/feedod/sodikov.ton/example.md")
   .then((res) => res.text())
   .then((md) => {
+    // article
     var article = document.createElement("article");
     article.classList.add("markdown-body");
     article.innerHTML = marked.parse(md);
     document.body.appendChild(article);
+    
+    // title
+    document.title = document.title || document.body.firstElementChild.innerText.trim();
   }).catch((e) => console.error(e));
-  
-// title
-document.title = document.title || document.body.firstElementChild.innerText.trim();
 
 function loadStyle(url) {
   var style = document.createElement("link");
