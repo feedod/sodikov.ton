@@ -1,2 +1,1 @@
-### Firdavs Sodikov
-#### Недопрограммист
+# Sodikov.ton
