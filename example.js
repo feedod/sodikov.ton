@@ -18,4 +18,5 @@ viewport.setAttribute(
 document.getElementsByTagName("head")[0].appendChild(viewport);
 
 // content
-document.body.innerHTML = marked.parse('# Marked in the browser\n\nRendered by **marked**.');
+const html = marked.parse('# Marked in Node.js\n\nRendered by **marked**.');
+document.body.innerHTML = html;
