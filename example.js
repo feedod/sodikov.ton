@@ -14,19 +14,33 @@ viewport.setAttribute("name", "viewport");
 viewport.setAttribute("content", "width=device-width, initial-scale=1.0");
 document.getElementsByTagName("head")[0].appendChild(viewport);
 
-// load github-markdown-css
+// github-markdown-css
 loadStyle("https://esm.sh/gh/sindresorhus/github-markdown-css/github-markdown-dark.css");
+addStyle(".markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0 auto; padding: 45px; } @media (max-width: 767px) { .markdown-body { padding: 15px; } }");
 
 // content
 fetch("https://esm.sh/gh/feedod/sodikov.ton/example.md")
   .then((res) => res.text())
-  .then((md) => document.body.innerHTML = marked.parse(md))
-  .catch((e) => console.error(e));
+  .then((md) => {
+    var article = document.createElement("article");
+    article.classList.add("markdown-body");
+    article.innerHTML = marked.parse(md);
+    document.getElementsByTagName("body")[0].appendChild(article);
+  }).catch((e) => console.error(e));
+  
+// title
+document.title = document.title || document.body.firstElementChild.innerText.trim();
 
 function loadStyle(url) {
   var style = document.createElement("link");
   style.rel = "stylesheet";
   style.href = url;
+  document.getElementsByTagName("head")[0].appendChild(style);
+}
+
+function addStyle(st) {
+  var style = document.createElement("style");
+  style.innerHTML = st;
   document.getElementsByTagName("head")[0].appendChild(style);
 }
 
