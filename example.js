@@ -15,7 +15,7 @@ viewport.setAttribute("content", "width=device-width, initial-scale=1.0");
 document.getElementsByTagName("head")[0].appendChild(viewport);
 
 // content
-fetch("index.md")
+fetch("https://esm.sh/gh/feedod/sodikov.ton/index.md")
   .then((res) => res.text())
   .then((md) => document.body.innerHTML = marked.parse(md))
   .catch((e) => console.error(e));
