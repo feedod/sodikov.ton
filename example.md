@@ -1,2 +1,2 @@
-# Firdavs Sodikov [^_^](https://feedod.t.me)
+# [^_^](https://feedod.t.me) Firdavs Sodikov
 > Hello world!
