@@ -1,4 +1,4 @@
 # Firdavs Sodikov
 > Hello world!
 [Telegram](https://feedod.t.me)
-[*](http://sodikov.ton.ski)
+[^_^](http://sodikov.ton.ski)
