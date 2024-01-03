@@ -1,5 +1,3 @@
 # Firdavs Sodikov
-> Hello
+> Hello world!
 [Telegram](https://feedod.t.me)
-> world!
-[^_^](http://sodikov.ton.ski)
